@@ -16,6 +16,10 @@ def histoire():
 def lieux():
     return render_template("lieux.html")
 
+@app.route('/credits')
+def credits():
+    return render_template("credits.html")
+
 @app.route('/lieux/1')
 def lieu1():
     return render_template("lieux/1.html")

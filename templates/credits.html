@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header w3-include-html="{{ url_for('static', filename='src/header.html') }}"></header>
+    <nav w3-include-html="{{ url_for('static', filename='src/nav.html') }}"></nav>
+    <footer div w3-include-html="{{ url_for('static', filename='src/footer.html') }}"></footer>
+
+
+    <div id="content">
+        <p>CREDITS</p>
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>includeHTML();</script>
+</body>
+
+</html>
