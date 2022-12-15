@@ -1,6 +1,0 @@
-V Template design w/ JS
-- Design the page
-- Create the website
-- Python webserver OR gohugo (to rework urls)
-- Convert JS to TS
-- Send to moodle (easy format + project format)
