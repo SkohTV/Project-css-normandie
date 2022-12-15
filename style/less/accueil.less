@@ -1,0 +1,49 @@
+/* GRID STYLES START HERE */
+body {
+    display: grid;
+    
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 15% 85%;
+    
+    grid-gap: 0;
+    height: 100vh;
+    margin: 0;
+
+    grid-template-areas:
+        "header header"
+        "nav content"
+        "footer footer";
+}
+
+
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+#content{grid-area: content;}
+footer{grid-area: footer;}
+
+
+/* Header */
+header {
+    background-color: aquamarine;
+    display: flex;
+}
+
+/* Footer */
+footer {
+    background-color: red;
+    display: flex;
+}
+
+/* Navbar */
+nav {
+    background-color: orange;
+    display: flex;
+}
+
+/* Content */
+#content {
+    background-color: purple;
+    display: flex;
+}
+
