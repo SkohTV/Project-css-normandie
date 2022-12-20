@@ -25,6 +25,9 @@ __A :__ The requierements were vague enough to allow me to do this project, but 
 __Q :__ Is it just me, or is the website taking time to load ?<br/>
 __A :__ Well, yes. I'm not very knowledgable in this field, but I think it concerns either Flask, Replit or the JS. And because all of them are pretty foreign to me, I don't wanna bother too much about what is causing this (heck, I'm not gonna write a whole Rust Backend).<br/>
 
+__Q :__ How was the website designed ?<br/>
+__A :__ This project was my first experience with Figma, if you wanna take a look to the original design, here you go : www.figma.com/file/0cB3RNgtH0aoNngx5zdrXc<br/>
+
 
 ## Project
 
