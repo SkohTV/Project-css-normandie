@@ -30,7 +30,7 @@ __A :__ Well, yes. I'm not very knowledgable in this field, but I think it conce
 
 ### Goal
 Small project to apply bases in HTML/CSS. The goal has been greatly expanded to get used to JS, Less, FLASK and the architecture of a website.
-Here is the original design : https://www.figma.com/file/0cB3RNgtH0aoNngx5zdrXc
+[Figma Design](https://www.figma.com/file/0cB3RNgtH0aoNngx5zdrXc) - [Color palette](https://coolors.co/252525-4f4f4f-8d91c7-b0daf1-ddfcad)
 
 ### Requirement
 Thoses are the requierements for the project :<br/>
