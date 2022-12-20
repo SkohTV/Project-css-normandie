@@ -20,7 +20,7 @@ __Q :__ There's not a lot of JS, right ?<br/>
 __A :__ Yes, I've never touched it before so I'm not really able to create my own. I had planned to learn the basics to customize / optimize it, but I think time's gonna be too short.<br/>
 
 __Q :__ There are 2 different versions ?<br/>
-__A :__ The requierements were vague enough to allow me to do this project, but because I don't wanna risk getting minus points on my grade I made a "requierements only version", where all Flask, Less and the rest have been removed, to just keep the essentials.<br/>
+__A :__ The requierements were vague enough to allow me to do this project, but because I don't wanna risk getting minus points on my grade I made a "requierements only version", where all Flask, Less and all have been removed, to just keep the essentials.<br/>
 
 __Q :__ Is it just me, or is the website taking time to load ?<br/>
 __A :__ Well, yes. I'm not very knowledgable in this field, but I think it concerns either Flask, Replit or the JS. And because all of them are pretty foreign to me, I don't wanna bother too much about what is causing this (heck, I'm not gonna write a whole Rust Backend).<br/>
