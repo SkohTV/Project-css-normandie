@@ -1,9 +1,20 @@
+/* Imports */
+@import "colors.less";
+
+.mixin_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* GRID STYLES START HERE */
 body {
     display: grid;
-    
+    background-color: @Eerie_Black;
+
     grid-template-rows: 10% 80% 10%;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     
     grid-gap: 0;
     height: 100vh;
@@ -25,7 +36,8 @@ footer{grid-area: footer;}
 
 /* Header */
 header {
-    background-color: aquamarine;
+    background-color: @Davys_Grey;
+    opacity: 0.7;
     display: flex;
 }
 
@@ -33,16 +45,52 @@ header {
 
 /* Footer */
 footer {
-    background-color: red;
-    display: flex;
+    background-color: @Eerie_Black;
+    flex-direction: column;
+    .mixin_center;
+}
+
+footer .rectangle {
+    background-color: @Davys_Grey;
+    opacity: 0.7;
+    height: 10%;
+    width: 100%;
+}
+
+footer #first {
+    height: 90%;
+    width: 100% * (1/4);
+    border-radius: 100px 100px 0px 0px;
+    .mixin_center;
+    flex-direction: row;
+}
+
+footer a {
+    width: 100% * (1/4);
+    height: 90%;
+    .mixin_center;
+}
+
+footer a svg {
+    max-height: 100%;
+    color: @Blue_Bell;
+    transition: 0.4s;
+}
+
+footer a:hover svg {
+    transition: 0.4s;
+    color: lighten(@Blue_Bell, 20%);
+    max-height: 105%;
 }
 
 
 
 /* Navbar */
 nav {
-    background-color: orange;
+    background-color: @Eerie_Black;
     display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 nav > div > ul {
@@ -57,22 +105,34 @@ nav ul  {
     list-style: none;
 }
 
+.double {
+    margin: 7px;
+}
+
 .single {
-    padding: 20px;
+    margin: 4px;
 }
 
 nav a {
-    border-radius: 15% 50%;
-    margin:15px;
-    padding: 15px;
-    background-color: aqua;
+    color: @Uranium_Blue;
+    text-decoration: none;
+    border-radius: 6px;
+    margin:5px;
+    padding: 5px;
+    background-color: transparent;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    background-color: @Davys_Grey;
+    transition: 0.1s;
 }
 
 
 
 /* Content */
 #content {
-    background-color: purple;
+    background-color: @Eerie_Black;
     display: flex;
 }
 
