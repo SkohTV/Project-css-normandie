@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
 }
+/* Fonts */
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
 /* GRID STYLES START HERE */
 body {
   display: grid;
@@ -41,10 +45,18 @@ header img {
 }
 header h1 {
   color: #DDFCAD;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.34782609vw;
 }
 header .left,
 header .right {
   flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   padding: 7px;
 }
 /* Footer */
@@ -104,20 +116,20 @@ nav ul {
   align-items: left;
   list-style: none;
 }
-.double {
-  margin: 7px;
-}
+.double,
 .single {
-  margin: 4px;
+  margin: 0.5vw;
 }
 nav a {
   color: #B0DAF1;
+  font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
   border-radius: 6px;
   margin: 5px;
   padding: 5px;
   background-color: transparent;
   transition: 0.1s;
+  font-size: 2.22222222vh;
 }
 nav a:hover {
   background-color: #4F4F4F;
@@ -126,5 +138,58 @@ nav a:hover {
 /* Content */
 #content {
   background-color: #252525;
+}
+body #content .accueil {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 0;
+  height: 80vh;
+  margin: 0;
+  grid-template-areas: "title image" "text void";
+}
+#content #title {
+  grid-area: title;
+}
+#content #text {
+  grid-area: text;
+}
+#content #image {
+  grid-area: image;
+}
+#content #void {
+  grid-area: void;
+}
+#content .image {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content .image img {
+  border-radius: 20vh 5vh 10vh 5vh;
+  max-width: 75%;
+  max-height: 90%;
+}
+#content .accueil .title {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #B0DAF1;
+  font-size: 3.33333333vh;
+}
+#content .accueil .title h2 {
+  margin: 0px;
+}
+#content .accueil .text {
+  font-family: 'Nunito', sans-serif;
+  color: #8D91C7;
+  display: flex;
+  justify-content: right;
+  align-self: flex-start;
+  font-size: 1.66666667vh;
+}
+#content .accueil .text .wrapper {
+  width: 75%;
+  text-align: justify;
 }

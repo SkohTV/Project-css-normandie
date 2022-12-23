@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     <title>Accueil</title>
 </head>
@@ -17,7 +22,20 @@
 
 
     <div id="content">
-        <p>ACCUEIL</p>
+        <div class="accueil">
+            <div class="title">
+                <h2>La Normandie</h2>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static', filename='img/normandie.jpg') }}">
+            </div>
+            <div class="text">
+                <div class="wrapper"><p>La Normandie est une région incontournable pour tous ceux qui s'intéressent à l'histoire et au patrimoine. Nous vous invitons à découvrir tous ces lieux historiques lors de votre prochaine visite en Normandie.</p></div>
+            </div>
+            <div class="void">
+
+            </div>
+        </div>
     </div>
 
 

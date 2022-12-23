@@ -1,0 +1,63 @@
+@import "colors.less";
+
+
+body #content .accueil {
+    display: grid;
+
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    
+    grid-gap: 0;
+    height: 80vh;
+    margin: 0;
+
+    grid-template-areas:
+        "title image"
+        "text void";
+}
+
+#content #title{grid-area: title;}
+#content #text{grid-area: text;}
+#content #image{grid-area: image;}
+#content #void{grid-area: void;}
+
+
+#content .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .image img {
+    border-radius: (5vh * 4) (5vh * 1) (5vh * 2) (5vh * 1);
+    max-width: 75%;
+    max-height: 90%;
+}
+
+#content .accueil .title {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: @Uranium_Blue;
+    font-size: (100vh) * (1/30);
+}
+
+#content .accueil .title h2 {
+    margin: 0px;
+}
+
+
+#content .accueil .text {
+    font-family: 'Nunito', sans-serif;
+    color: @Blue_Bell;
+    display: flex;
+    justify-content: right;
+    align-self: flex-start;
+    font-size: (100vh) * (1/60);
+}
+
+#content .accueil .text .wrapper {
+    width: 75%;
+    text-align: justify;
+}
