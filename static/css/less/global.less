@@ -20,7 +20,7 @@ body {
     display: grid;
     background-image: url(/static/img/background.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: fade(@Eerie_Black, 99%);
 
     grid-template-rows: 10% 80% 10%;
@@ -139,6 +139,11 @@ nav ul  {
     margin: (100vw) * (1/200);
 }
 
+.single {
+    list-style: circle;
+    color: @Blue_Bell;
+}
+
 nav a {
     color: @Uranium_Blue;
     font-family: 'Roboto Condensed', sans-serif;
@@ -155,10 +160,3 @@ nav a:hover {
     background-color: @Davys_Grey;
     transition: 0.1s;
 }
-
-
-
-/* Content */
-#content {
-}
-

@@ -41,4 +41,4 @@ def lieu4():
     return render_template("lieux/plages-du-debarquement.html")
 
 if __name__ == "__main__":
-    app.run(debug=True ,port=8080,use_reloader=False)
+    app.run(host='0.0.0.0', debug=True ,port=8080,use_reloader=False)
