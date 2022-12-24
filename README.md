@@ -4,8 +4,12 @@
 ## To-do
 ✔️ Template page design w/ JS<br/>
 ✔️ Python webserver (FLASK)<br/>
-⌛ Design the page<br/>
-❌ Create the website content (HTML/CSS)<br/>
+✔️ Design the page<br/>
+⌛ Create the website content (HTML/CSS)<br/>
+❌ Design review<br/>
+❌ Code review by W3 validator<br/>
+❌ Export webserver to Replit<br/>
+❌ Finalize and organize project<br/>
 ❌ Convert to smol and send to moodle<br/>
 
 
@@ -41,5 +45,6 @@ Thoses are the requierements for the project :<br/>
 \- Only one CSS file<br/>
 
 ### Access
-▶️ You can clone the git and run main.py to create a Flask server. You will then be able to access the website on your local network and modify it.<br/>
-▶️ The server is also hosted at all time on https://project-css-normandie.skohtv.repl.co/ for free by replit.it<br/>
+▶️ You can clone the SMOL git and run accueil.html<br/>
+▶️ The website is also hosted at all time at https://project-css-normandie.skohtv.repl.co/ for free by replit.it<br/>
+▶️ You can clone the SERVER git and run main.py to create a Flask server and access it at http://127.0.0.1:8080<br/>
