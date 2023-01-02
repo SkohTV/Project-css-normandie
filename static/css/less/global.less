@@ -8,6 +8,13 @@
     justify-content: center;
 }
 
+#content {
+    display: flex;
+    max-width: 80vw;
+    min-height: 80vh;
+}
+
+
 /* Fonts */
 
 h1 {
@@ -19,15 +26,14 @@ h1 {
 body {
     display: grid;
     background-image: url(/static/img/background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     background-color: fade(@Eerie_Black, 99%);
 
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10vh calc(100% - 20vh) 10vh;
     grid-template-columns: 20% 80%;
     
     grid-gap: 0;
-    height: 100vh;
+    height: auto;
     margin: 0;
 
     grid-template-areas:
@@ -62,7 +68,7 @@ header h1 {
     color: lighten(@Mindaro, -10%);
     margin: 0px;
     .mixin_center;
-    font-size: (100vw) * (1/23);
+    font-size: calc( 100vw * calc(1/23) );
 }
 
 header .left, header .right {
@@ -78,7 +84,9 @@ header .left, header .right {
 /* Footer */
 footer {
     flex-direction: column;
-    .mixin_center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 footer .rectangle {
@@ -86,19 +94,23 @@ footer .rectangle {
     opacity: 1;
     height: 10%;
     width: 100%;
+    .mixin_center;
 }
 
 footer #first {
-    height: 90%;
-    width: 100% * (1/4);
+    height: fit-content;
+    width: fit-content;
+    padding: 1vh 3vh 1vh 3vh;
     border-radius: 100px 100px 0px 0px;
-    .mixin_center;
     flex-direction: row;
+
+    .mixin_center
 }
 
+
 footer a {
-    width: 100% * (1/4);
-    height: 90%;
+    width: calc(25vh * calc(1/4));
+    aspect-ratio: 1 / 1;
     .mixin_center;
 }
 
@@ -122,8 +134,17 @@ nav {
     align-items: center;
 }
 
-nav > div > ul {
+nav li {
+    white-space: nowrap;
+}
+
+nav > ul {
     padding: 0px;
+}
+
+nav > ul > li > ul {
+    list-style-position: inside;
+    padding-inline-start: 2vw;
 }
 
 nav ul  {
@@ -132,11 +153,10 @@ nav ul  {
     flex-direction: column;
     align-items: left;
     list-style: none;
+    max-width: 100%;
 }
 
-.double , .single {
-    margin: (100vw) * (1/200);
-}
+
 
 .single {
     list-style: circle;
@@ -144,15 +164,22 @@ nav ul  {
 }
 
 nav a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
     color: @Uranium_Blue;
+    background-color: transparent;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
+
     border-radius: 6px;
     margin:5px;
     padding: 5px;
-    background-color: transparent;
+    
     transition: 0.1s;
-    font-size: (100vh) * (1/45);
+    max-width: 20vw;
+    font-size: calc( calc( 100vw * calc(1/160) ) + calc( 100vh * calc(1/80) ) );
 }
 
 nav a:hover {
