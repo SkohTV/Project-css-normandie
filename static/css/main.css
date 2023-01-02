@@ -99,7 +99,6 @@ footer a svg {
 footer a:hover svg {
   transition: 0.4s;
   color: #d1d3e9;
-  max-height: 105%;
 }
 /* Navbar */
 nav {
@@ -194,26 +193,4 @@ body #content .accueil {
 #content .accueil .wrapper {
   width: 75%;
   text-align: justify;
-}
-/* GRID STYLES START HERE */
-body #content .incontournables {
-  display: grid;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-columns: 20% 80%;
-  grid-gap: 0;
-  height: 100vh;
-  margin: 0;
-  grid-template-areas: "header header" "nav content" "footer footer";
-}
-header {
-  grid-area: header;
-}
-nav {
-  grid-area: nav;
-}
-#content {
-  grid-area: content;
-}
-footer {
-  grid-area: footer;
 }

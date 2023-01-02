@@ -99,7 +99,6 @@ footer a svg {
 footer a:hover svg {
   transition: 0.4s;
   color: #d1d3e9;
-  max-height: 105%;
 }
 /* Navbar */
 nav {
