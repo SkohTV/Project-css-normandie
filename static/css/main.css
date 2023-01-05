@@ -93,6 +93,7 @@ footer #first {
   justify-content: center;
 }
 footer a {
+  margin: 0px 5px 0px 5px;
   width: calc(25vh * calc(1/4));
   aspect-ratio: 1 / 1;
   display: flex;
@@ -107,6 +108,16 @@ footer a svg {
 footer a:hover svg {
   transition: 0.4s;
   color: #d1d3e9;
+}
+footer a:hover ~ div.hover-message {
+  opacity: 1;
+  transition: 0.4s;
+}
+footer div.hover-message {
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: 0.4s;
 }
 /* Navbar */
 nav {
