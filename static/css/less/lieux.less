@@ -1,3 +1,8 @@
+/* Imports */
+@import "colors.less";
+
+
+
 #content.incontournables {
     overflow-wrap: break-word;
     display: inline-block;
@@ -7,8 +12,68 @@
     width: 300px;
     height: 300px;
     min-width: 300px;
+    max-height: 300px;
     margin: 30px;
+    border-radius: 25px;
     display: inline-block;
-    background-color: red;
+    background-color: @Davys_Grey;
 }
 
+#content.incontournables .image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content.incontournables .image img {
+    max-width: calc(100% - 20px);
+    aspect-ratio: 100 / 42.5;
+    border-radius: 25px;
+    margin: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#content.incontournables .grid-wrap {
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 10% 45%;
+    height: 100%;
+
+    grid-template-areas:
+        "image"
+        "title"
+        "text";
+}
+
+#content.incontournables .grid-wrap .image {grid-area: image;}
+#content.incontournables .grid-wrap .title {grid-area: title;}
+#content.incontournables .grid-wrap .description {grid-area: text;}
+
+#content.incontournables .grid-wrap .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    font-weight: bold;
+
+    color: @Uranium_Blue;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#content.incontournables .grid-wrap .description p {
+    max-height: 100%;
+    margin: 0px;
+    margin: 10px;
+    
+    font-family: 'Nunito', sans-serif;
+    color: @Blue_Bell;
+
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
