@@ -9,15 +9,36 @@
 }
 
 #content.incontournables > div {
-    width: 300px;
-    height: 300px;
-    min-width: 300px;
-    max-height: 300px;
+    max-width: 340px;
+    max-height: 340px;
+    min-height: 250px;
+    min-width: 250px;
+    aspect-ratio: 1 / 1;
     margin: 30px;
     border-radius: 25px;
     display: inline-block;
     background-color: @Davys_Grey;
+    transition: 0.5s;
 }
+
+#content.incontournables > div:hover {
+    border-radius: 100%;
+    margin: 30px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: lighten(@Davys_Grey, -10);
+    transition: 0.5s;
+}
+
+#content.incontournables > div:hover .grid-wrap p {color: @Uranium_Blue;transition: 0.5s};
+#content.incontournables > div:hover .grid-wrap .title {color: @Blue_Bell;transition: 0.5s};
+
+#content.incontournables > div:hover .image img {
+    aspect-ratio: 100 / 42.5;
+    border-radius: 25px;
+    transition: 0.3s;
+};
+
 
 #content.incontournables .image {
     max-width: 100%;
@@ -28,11 +49,13 @@
 
 #content.incontournables .image img {
     max-width: calc(100% - 20px);
-    aspect-ratio: 100 / 42.5;
-    border-radius: 25px;
+    max-height: calc(100% - 20px);
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
     margin: 10px;
     object-fit: cover;
     object-position: top;
+    transition: 0.5s
 }
 
 #content.incontournables .grid-wrap {
@@ -76,4 +99,13 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    transition: 0.5s;
+}
+
+#content.incontournables h1 {
+    font-size: 1.7em;
+}
+
+#content.incontournables a {
+    text-decoration: none;
 }

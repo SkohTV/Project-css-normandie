@@ -1,0 +1,115 @@
+/* Imports */
+#content.histoire {
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+#content.histoire > div {
+  max-width: 340px;
+  max-height: 340px;
+  min-height: 250px;
+  min-width: 250px;
+  aspect-ratio: 1 / 1;
+  margin: 30px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: #4F4F4F;
+  transition: 0.5s;
+  vertical-align: top;
+}
+#content.histoire > div:hover {
+  border-radius: 100%;
+  margin: 30px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: #363636;
+  transition: 0.5s;
+}
+#content.histoire > div:hover .grid-wrap .description p {
+  color: #B0DAF1;
+  transition: 0.5s;
+}
+#content.histoire > div:hover .grid-wrap .image h1 {
+  color: #DDFCAD;
+  transition: 0.5s;
+}
+#content.histoire > div:hover .grid-wrap .title h1 {
+  color: #8D91C7;
+  transition: 0.5s;
+}
+#content.histoire > div:hover .image {
+  aspect-ratio: 100 / 42.5;
+  border-radius: 25px;
+  background-color: #00000000;
+  flex-flow: row;
+  transition: 0.3s;
+}
+#content.histoire .image {
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  align-self: center;
+  justify-self: center;
+  height: 130px;
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 10px;
+  object-position: center;
+  opacity: 1;
+  transition: 0.5s;
+}
+#content.histoire .image p {
+  padding: 0px 5px;
+  white-space: nowrap;
+}
+#content.histoire .grid-wrap {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 45% 10% 45%;
+  height: 100%;
+  grid-template-areas: "image" "title" "text";
+}
+#content.histoire .grid-wrap .image {
+  grid-area: image;
+}
+#content.histoire .grid-wrap .title {
+  grid-area: title;
+}
+#content.histoire .grid-wrap .description {
+  grid-area: text;
+}
+#content.histoire .grid-wrap .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+  font-weight: bold;
+  color: #B0DAF1;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#content.histoire .grid-wrap .image h1,
+#content.histoire .grid-wrap .image p {
+  color: #DDFCAD;
+  margin: 0px;
+  min-height: 18px;
+}
+#content.histoire .grid-wrap .description p {
+  max-height: 100%;
+  margin: 10px;
+  font-family: 'Nunito', sans-serif;
+  color: #8D91C7;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#content.histoire h1 {
+  font-size: 1.7em;
+}
+#content.histoire .image p {
+  color: #DDFCAD;
+  font-family: 'Merriweather Sans', sans-serif;
+}

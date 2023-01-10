@@ -1,0 +1,98 @@
+/* Imports */
+#content.incontournables {
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+#content.incontournables > div {
+  max-width: 340px;
+  max-height: 340px;
+  min-height: 250px;
+  min-width: 250px;
+  aspect-ratio: 1 / 1;
+  margin: 30px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: #4F4F4F;
+  transition: 0.5s;
+}
+#content.incontournables > div:hover {
+  border-radius: 100%;
+  margin: 30px;
+  border-radius: 25px;
+  display: inline-block;
+  background-color: #363636;
+  transition: 0.5s;
+}
+#content.incontournables > div:hover .grid-wrap p {
+  color: #B0DAF1;
+  transition: 0.5s;
+}
+#content.incontournables > div:hover .grid-wrap .title {
+  color: #8D91C7;
+  transition: 0.5s;
+}
+#content.incontournables > div:hover .image img {
+  aspect-ratio: 100 / 42.5;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+#content.incontournables .image {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content.incontournables .image img {
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 10px;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.5s;
+}
+#content.incontournables .grid-wrap {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 45% 10% 45%;
+  height: 100%;
+  grid-template-areas: "image" "title" "text";
+}
+#content.incontournables .grid-wrap .image {
+  grid-area: image;
+}
+#content.incontournables .grid-wrap .title {
+  grid-area: title;
+}
+#content.incontournables .grid-wrap .description {
+  grid-area: text;
+}
+#content.incontournables .grid-wrap .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+  font-weight: bold;
+  color: #B0DAF1;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#content.incontournables .grid-wrap .description p {
+  max-height: 100%;
+  margin: 0px;
+  margin: 10px;
+  font-family: 'Nunito', sans-serif;
+  color: #8D91C7;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#content.incontournables h1 {
+  font-size: 1.7em;
+}
+#content.incontournables a {
+  text-decoration: none;
+}
