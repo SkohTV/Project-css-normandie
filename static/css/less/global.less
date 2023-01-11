@@ -126,18 +126,6 @@ footer a:hover svg {
     color: lighten(@Blue_Bell, 20%);
 }
 
-footer a:hover {
-    opacity: 1;
-    transition: 0.4s;
-}
-
-footer div.hover-message {
-    position: relative;
-    top: -100px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
 
 
 /* Navbar */
@@ -197,5 +185,35 @@ nav a {
 
 nav a:hover {
     background-color: @Davys_Grey;
-    transition: 0.1s;
+    transition: 0.3s;
+}
+
+
+.credits {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.credits a {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00000000 ;
+    color:  @Mindaro;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: fit-content;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    border-color: @Blue_Bell;
+}
+
+.credits h1 {
+    color: @Blue_Bell;
+    align-self: center;
 }

@@ -107,6 +107,30 @@
 }
 
 #content .accueil .wrapper {
+    display: flex;
+    flex-flow: column;
     width: 75%;
     text-align: justify;
+}
+
+#content .accueil a {
+    font-size: calc( 100vh * calc(1/55) );
+    text-decoration: none;
+    color: @Mindaro;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+#content .accueil .text a {
+    background-color: #00000000;
+    color: @Mindaro;
+    transition: 0.5s;
+}
+
+#content .accueil .text a:hover {
+    color: @Uranium_Blue;
+    background-color: fade(@Blue_Bell, 30%);
+    transition: 0.5s;
 }
