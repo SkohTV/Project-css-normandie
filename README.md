@@ -6,7 +6,6 @@
 ✔️ Python webserver (FLASK)<br/>
 ✔️ Design the page<br/>
 ✔️ Create the website content (HTML/CSS)<br/>
-✔️ Design review<br/>
 ⌛ Code review by W3 validator<br/>
 ❌ Export webserver to Replit<br/>
 ❌ Finalize and organize project<br/>
