@@ -131,7 +131,7 @@ nav > ul > li > ul {
 }
 
 nav ul  {
-  display: flex;  justify-content: center;  flex-flow: column;  align-items: left;
+  display: flex;  justify-content: center;  flex-flow: column;
   list-style: none;
   max-width: 100%;
 }
@@ -162,7 +162,7 @@ nav a:hover {
 
 
 /** Credits */
-#credits {display: flex;  align-items: left;  justify-content: center;  flex-flow: column;}
+#credits {display: flex;  justify-content: center;  flex-flow: column;}
 #credits h1 {color: var(--Blue_Bell);  align-self: center;}
 
 #credits a {
@@ -401,7 +401,7 @@ nav a:hover {
   border-radius: 25px;
   background-color: #00000000;
   transition: 0.3s;
-};
+}
 
 
 
@@ -503,7 +503,7 @@ nav a:hover {
   aspect-ratio: 100 / 42.5;
   border-radius: 25px;
   transition: 0.3s;
-};
+}
 
 
 
