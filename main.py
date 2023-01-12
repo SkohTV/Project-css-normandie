@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def accueil():
-	return render_template("accueil.html")
+	return render_template("index.html")
 @app.route('/accueil')
 def accueilR1():
     return redirect("/")
